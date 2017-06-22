@@ -38,7 +38,7 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 
 1. Upload the entire 'guest-order-tracking-for-woocommerce' folder to the '/wp-content/plugins/' directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Start by visiting plugin settings at WooCommerce > Settings > Wish List.
+3. Start by visiting plugin settings at WooCommerce > Settings > Guest order tracking.
 
 == Changelog ==
 
