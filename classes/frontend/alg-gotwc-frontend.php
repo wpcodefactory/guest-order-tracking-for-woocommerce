@@ -71,13 +71,12 @@ if ( ! class_exists( 'Alg_GOTWC_Frontend' ) ) {
 			}
 
 			$admin_settings   = new Alg_GOTWC_Admin_Tab();
-			$url_for_tracking = apply_filters( 'alg_gotwc_tracking_page_url', esc_url( get_option( $admin_settings->option_track_page_url ) ) );
+			$url_for_tracking = apply_filters( 'alg_gotwc_tracking_page_url', esc_url( get_option( $admin_settings->option_track_page_url,home_url( '/tracking/' ) ) ) );
 			$order            = wc_get_order( $wp_query->query['view-order'] );
 			if ( $order ) {
 				$final_tracking_page_url = add_query_arg( array(
 					'order_id' => $order->get_order_number(),
-				), $url_for_tracking );
-
+				), $url_for_tracking );				
 				wp_redirect( $final_tracking_page_url );
 				exit();
 			}

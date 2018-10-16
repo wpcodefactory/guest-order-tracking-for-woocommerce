@@ -2,8 +2,8 @@
 Contributors: algoritmika,karzin,anbinder
 Tags: woocommerce,order,tracking,unlogged,guest
 Requires at least: 4.4
-Tested up to: 4.7
-Stable tag: 1.2.8
+Tested up to: 4.9
+Stable tag: 1.0.1
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -42,10 +42,15 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 
 == Changelog ==
 
+= 1.0.1 - 16/10/2017 =
+* Get default tracking page in case it hasn't been set
+* Add WooCommerce requirements
+
 = 1.0.0 - 22/06/2017 =
 * Initial Release.
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-* Initial Release.
+= 1.0.1 =
+* Get default tracking page in case it hasn't been set
+* Add WooCommerce requirements
