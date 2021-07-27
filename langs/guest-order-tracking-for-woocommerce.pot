@@ -1,0 +1,54 @@
+#: guest-order-tracking-for-woocommerce.php:141
+msgid "Settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:24
+msgid "General"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:39
+msgid "Guest Order Tracking Options"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:44
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:24
+msgid "Guest Order Tracking"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:45
+msgid "Enable plugin"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:51
+msgid "Tracking page URL"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:52
+msgid "The URL of the tracking page."
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings-general.php:53
+#, php-format
+msgid "Create a page and add %s shortcode there. Then copy page link here."
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:41
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:46
+msgid "Reset section settings"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:47
+msgid "Reset"
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:48
+msgid "Check the box and save changes to reset."
+msgstr ""
+
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:76
+#: includes/settings/class-alg-wc-guest-order-tracking-settings.php:91
+msgid "Your settings have been reset."
+msgstr ""
