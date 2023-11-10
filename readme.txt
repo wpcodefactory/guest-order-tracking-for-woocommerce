@@ -1,8 +1,8 @@
 === Guest Order Tracking for WooCommerce ===
-Contributors: algoritmika, anbinder, karzin
+Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, order, tracking, unlogged, guest, woo commerce
 Requires at least: 4.4
-Tested up to: 5.8
+Tested up to: 6.4
 Stable tag: 2.1.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -17,9 +17,9 @@ Once you activate and setup this plugin, if an unlogged user tries to access an 
 
 == Frequently Asked Questions ==
 
-= How the plugin works? =
+= How does the plugin work? =
 
-When an unlogged user tries to access an order page URL like `http://example.com/my-account/view-order/123/`, nothing happens. Once you activate and setup this plugin, instead of nothing, user will be redirected to the tracking order page having the order field already filled.
+By default, when unlogged users try to access an order page URL like `http://example.com/my-account/view-order/123/`, nothing happens. Once you activate and set up this plugin, users will be redirected to the tracking order page having the order field already filled.
 
 = How to use this plugin? =
 
@@ -45,6 +45,11 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 3. Start by visiting plugin settings at "WooCommerce > Settings > Guest Order Tracking".
 
 == Changelog ==
+
+= 2.1.2 - 10/11/2023 =
+* Tested up to: 6.4
+* WC tested up to: 8.2
+* Move to WPFactory.
 
 = 2.1.2 - 27/07/2021 =
 * Tested up to: 5.8.
