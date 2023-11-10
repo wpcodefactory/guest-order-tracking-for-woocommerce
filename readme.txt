@@ -46,10 +46,11 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 
 == Changelog ==
 
-= 2.1.2 - 10/11/2023 =
+= 2.1.3 - 10/11/2023 =
 * Tested up to: 6.4
 * WC tested up to: 8.2
 * Move to WPFactory.
+* Dev - Add github deploy setup.
 
 = 2.1.2 - 27/07/2021 =
 * Tested up to: 5.8.
