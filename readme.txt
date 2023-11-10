@@ -3,7 +3,7 @@ Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmu
 Tags: woocommerce, order, tracking, unlogged, guest, woo commerce
 Requires at least: 4.4
 Tested up to: 6.4
-Stable tag: 2.1.2
+Stable tag: 2.1.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

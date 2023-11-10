@@ -3,7 +3,7 @@
 Plugin Name: Guest Order Tracking for WooCommerce
 Plugin URI: https://wordpress.org/plugins/guest-order-tracking-for-woocommerce/
 Description: Makes it easier for unlogged users to access a WooCommerce order.
-Version: 2.1.3-dev
+Version: 2.1.3
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: guest-order-tracking-for-woocommerce
@@ -32,7 +32,7 @@ final class Alg_WC_Guest_Order_Tracking {
 	 * @var   string
 	 * @since 2.0.0
 	 */
-	public $version = '2.1.3-dev-20231110-1443';
+	public $version = '2.1.3';
 
 	/**
 	 * @var   Alg_WC_Guest_Order_Tracking The single instance of the class
