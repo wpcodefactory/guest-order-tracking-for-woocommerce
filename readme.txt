@@ -1,9 +1,9 @@
 === Guest Order Tracking for WooCommerce ===
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
-Tags: woocommerce, order, tracking, unlogged, guest, woo commerce
+Tags: woocommerce, order, tracking, unlogged, guest
 Requires at least: 4.4
 Tested up to: 6.4
-Stable tag: 2.1.4
+Stable tag: 2.1.5
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -45,6 +45,9 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 3. Start by visiting plugin settings at "WooCommerce > Settings > Guest Order Tracking".
 
 == Changelog ==
+
+= 2.1.5 - 11/03/2024 =
+* Fix - One or more tags were ignored. Please limit your plugin to 5 tags.
 
 = 2.1.4 - 11/03/2024 =
 * Add compatibility with HPOS.
