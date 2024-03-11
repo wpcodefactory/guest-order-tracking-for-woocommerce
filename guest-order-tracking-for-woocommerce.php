@@ -3,13 +3,13 @@
 Plugin Name: Guest Order Tracking for WooCommerce
 Plugin URI: https://wordpress.org/plugins/guest-order-tracking-for-woocommerce/
 Description: Makes it easier for unlogged users to access a WooCommerce order.
-Version: 2.1.3
+Version: 2.1.4
 Author: WPFactory
 Author URI: https://wpfactory.com
 Text Domain: guest-order-tracking-for-woocommerce
 Domain Path: /langs
 WC requires at least: 3.0.0
-WC tested up to: 8.2
+WC tested up to: 8.6
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -32,13 +32,29 @@ final class Alg_WC_Guest_Order_Tracking {
 	 * @var   string
 	 * @since 2.0.0
 	 */
-	public $version = '2.1.3';
+	public $version = '2.1.4';
 
 	/**
 	 * @var   Alg_WC_Guest_Order_Tracking The single instance of the class
 	 * @since 2.0.0
 	 */
 	protected static $_instance = null;
+
+	/**
+	 * $file_system_path.
+	 *
+	 * @since 2.1.4
+	 */
+	protected $file_system_path;
+
+	/**
+	 * Core.
+	 *
+	 * @since 2.1.4
+	 *
+	 * @var Alg_WC_Guest_Order_Tracking_Core
+	 */
+	public $core = null;
 
 	/**
 	 * Main Alg_WC_Guest_Order_Tracking Instance
@@ -59,19 +75,21 @@ final class Alg_WC_Guest_Order_Tracking {
 	}
 
 	/**
-	 * Alg_WC_Guest_Order_Tracking Constructor.
+	 * Initializer.
 	 *
-	 * @version 2.1.1
+	 * @version 2.1.4
 	 * @since   2.0.0
 	 *
 	 * @access  public
 	 */
-	function __construct() {
-
+	function init() {
 		// Check for active plugins
 		if ( ! $this->is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 			return;
 		}
+
+		// HPOS.
+		add_action( 'before_woocommerce_init', array( $this, 'declare_compatibility_with_hpos' ) );
 
 		// Set up localisation
 		add_action( 'init', array( $this, 'localize' ) );
@@ -83,7 +101,20 @@ final class Alg_WC_Guest_Order_Tracking {
 		if ( is_admin() ) {
 			$this->admin();
 		}
+	}
 
+	/**
+	 * declare_compatibility_with_hpos.
+	 *
+	 * @version 2.1.4
+	 * @since   2.1.4
+	 *
+	 * @return void
+	 */
+	function declare_compatibility_with_hpos() {
+		if ( class_exists( \Automattic\WooCommerce\Utilities\FeaturesUtil::class ) ) {
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', $this->get_filesystem_path(), true );
+		}
 	}
 
 	/**
@@ -198,6 +229,30 @@ final class Alg_WC_Guest_Order_Tracking {
 		return untrailingslashit( plugin_dir_path( __FILE__ ) );
 	}
 
+	/**
+	 * get_filesystem_path.
+	 *
+	 * @version 2.1.4
+	 * @since   2.1.4
+	 *
+	 * @return string
+	 */
+	function get_filesystem_path() {
+		return $this->file_system_path;
+	}
+
+	/**
+	 * set_filesystem_path.
+	 *
+	 * @version 2.1.4
+	 * @since   2.1.4
+	 *
+	 * @param   mixed  $file_system_path
+	 */
+	public function set_filesystem_path( $file_system_path ) {
+		$this->file_system_path = $file_system_path;
+	}
+
 }
 
 endif;
@@ -218,4 +273,6 @@ if ( ! function_exists( 'alg_wc_guest_order_tracking' ) ) {
 	}
 }
 
-alg_wc_guest_order_tracking();
+$plugin = alg_wc_guest_order_tracking();
+$plugin->set_filesystem_path( __FILE__ );
+$plugin->init();
