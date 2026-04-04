@@ -13,6 +13,14 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_Guest_Order_Tracking_Settings_Section' ) ) :
 
 class Alg_WC_Guest_Order_Tracking_Settings_Section {
+	
+	/**
+	 * FIX: PHP 8.2+ এ dynamic property deprecated।
+	 *
+	 * @version 2.1.8
+	*/
+	public $id = '';   
+    public $desc = ''; 
 
 	/**
 	 * Constructor.
