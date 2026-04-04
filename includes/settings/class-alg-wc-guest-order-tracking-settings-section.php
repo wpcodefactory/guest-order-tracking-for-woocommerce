@@ -2,7 +2,7 @@
 /**
  * Guest Order Tracking for WooCommerce - Section Settings
  *
- * @version 2.0.0
+ * @version 2.1.8
  * @since   2.0.0
  *
  * @author  WPFactory
@@ -13,6 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( ! class_exists( 'Alg_WC_Guest_Order_Tracking_Settings_Section' ) ) :
 
 class Alg_WC_Guest_Order_Tracking_Settings_Section {
+
+	/**
+	 * Id.
+	 *
+	 * @version 2.1.8
+	 * @since   2.1.8
+	*/
+	public $id = '';
+
+	/**
+	 * Desc.
+	 *
+	 * @version 2.1.8
+	 * @since   2.1.8
+	 */
+    public $desc = '';
 
 	/**
 	 * Constructor.
