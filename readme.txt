@@ -47,17 +47,17 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 == Changelog ==
 
 = 2.1.8 - 04/04/2026 =
-* Fix - Declare $id and $desc properties explicitly to resolve PHP 8.2+ dynamic property deprecation.
-* Tested up to: 6.9
-* WC tested up to: 10.6
+* Fix - Declare `$id` and `$desc` properties explicitly to resolve PHP 8.2+ dynamic property deprecation.
+* Tested up to: 6.9.
+* WC tested up to: 10.6.
 
 = 2.1.7 - 08/09/2025 =
-* Tested up to: 6.8
-* WC tested up to: 10.1
+* Tested up to: 6.8.
+* WC tested up to: 10.1.
 
 = 2.1.6 - 30/07/2024 =
-* Tested up to: 6.6
-* WC tested up to: 9.1
+* Tested up to: 6.6.
+* WC tested up to: 9.1.
 
 = 2.1.5 - 11/03/2024 =
 * Fix - One or more tags were ignored. Please limit your plugin to 5 tags.
@@ -67,8 +67,8 @@ If you are interested in contributing - head over to the [Guest Order Tracking f
 * WC tested up to: 8.6.
 
 = 2.1.3 - 10/11/2023 =
-* Tested up to: 6.4
-* WC tested up to: 8.2
+* Tested up to: 6.4.
+* WC tested up to: 8.2.
 * Move to WPFactory.
 * Dev - Add github deploy setup.
 
