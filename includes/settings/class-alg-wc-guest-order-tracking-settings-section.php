@@ -19,7 +19,7 @@ class Alg_WC_Guest_Order_Tracking_Settings_Section {
 	 *
 	 * @version 2.1.8
 	 * @since   2.1.8
-	*/
+	 */
 	public $id = '';
 
 	/**
@@ -28,7 +28,7 @@ class Alg_WC_Guest_Order_Tracking_Settings_Section {
 	 * @version 2.1.8
 	 * @since   2.1.8
 	 */
-    public $desc = '';
+	public $desc = '';
 
 	/**
 	 * Constructor.
